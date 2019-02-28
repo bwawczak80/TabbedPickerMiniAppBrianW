@@ -8,8 +8,17 @@
 
 import UIKit
 
-class KingSnakeViewController: UIViewController {
+class KingSnakeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet weak var display: UILabel!
+    @IBOutlet weak var picker: UIPickerView!
+    
+    private let kingWeight = ["4-15 grams", "16-23 grams", "24-30 grams", "31-50g", "51-150g",
+                            "150-250g", "250-400g", "401-600g", "601-800g", "> 800g"]
+    
+    private let kingFeeders = ["Pinky Mouse", "2 Pinky Mice", "Small Fuzzy Mouse", "Large Fuzzy Mouse", "Mouse Hopper", "Small Adult Mouse", "Large Adult Mouse", "Jumbo Adult Mouse", "2 Large Adult Mice", "Weaned Rat"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +36,30 @@ class KingSnakeViewController: UIViewController {
     }
     */
 
+    @IBAction func pressButton(_ sender: Any) {
+        let row = picker.selectedRow(inComponent: 0)
+        let feeder = kingFeeders[row]
+        display.text = "The appropriate meal for your snake is a \(feeder)"
+        
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return kingWeight.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return kingWeight[row]
+    }
+    
+    // changes picker text color
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let titleData = kingWeight[row]
+        let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        
+        return myTitle
+    }
 }
