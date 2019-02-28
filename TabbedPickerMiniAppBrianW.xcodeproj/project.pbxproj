@@ -13,6 +13,10 @@
 		6BE7AE282227958800A3F351 /* TabbedPickerMiniAppBrianW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7AE262227958800A3F351 /* TabbedPickerMiniAppBrianW.xcdatamodeld */; };
 		6BE7AE2A2227958900A3F351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7AE292227958900A3F351 /* Assets.xcassets */; };
 		6BE7AE2D2227958900A3F351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7AE2B2227958900A3F351 /* LaunchScreen.storyboard */; };
+		6BE7AE35222795D600A3F351 /* KingSnakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7AE34222795D600A3F351 /* KingSnakeViewController.swift */; };
+		6BE7AE37222795E600A3F351 /* CornSnakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7AE36222795E600A3F351 /* CornSnakeViewController.swift */; };
+		6BE7AE39222795FC00A3F351 /* BoaConstrictorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7AE38222795FC00A3F351 /* BoaConstrictorViewController.swift */; };
+		6BE7AE3B22279D1000A3F351 /* BallPythonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7AE3A22279D1000A3F351 /* BallPythonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		6BE7AE292227958900A3F351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BE7AE2C2227958900A3F351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BE7AE2E2227958900A3F351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE7AE34222795D600A3F351 /* KingSnakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingSnakeViewController.swift; sourceTree = "<group>"; };
+		6BE7AE36222795E600A3F351 /* CornSnakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornSnakeViewController.swift; sourceTree = "<group>"; };
+		6BE7AE38222795FC00A3F351 /* BoaConstrictorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoaConstrictorViewController.swift; sourceTree = "<group>"; };
+		6BE7AE3A22279D1000A3F351 /* BallPythonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallPythonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			children = (
 				6BE7AE1F2227958800A3F351 /* AppDelegate.swift */,
 				6BE7AE212227958800A3F351 /* ViewController.swift */,
+				6BE7AE3A22279D1000A3F351 /* BallPythonViewController.swift */,
+				6BE7AE34222795D600A3F351 /* KingSnakeViewController.swift */,
+				6BE7AE36222795E600A3F351 /* CornSnakeViewController.swift */,
+				6BE7AE38222795FC00A3F351 /* BoaConstrictorViewController.swift */,
 				6BE7AE232227958800A3F351 /* Main.storyboard */,
 				6BE7AE292227958900A3F351 /* Assets.xcassets */,
 				6BE7AE2B2227958900A3F351 /* LaunchScreen.storyboard */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE7AE3B22279D1000A3F351 /* BallPythonViewController.swift in Sources */,
 				6BE7AE222227958800A3F351 /* ViewController.swift in Sources */,
 				6BE7AE202227958800A3F351 /* AppDelegate.swift in Sources */,
+				6BE7AE39222795FC00A3F351 /* BoaConstrictorViewController.swift in Sources */,
+				6BE7AE37222795E600A3F351 /* CornSnakeViewController.swift in Sources */,
+				6BE7AE35222795D600A3F351 /* KingSnakeViewController.swift in Sources */,
 				6BE7AE282227958800A3F351 /* TabbedPickerMiniAppBrianW.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
